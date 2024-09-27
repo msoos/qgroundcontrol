@@ -152,6 +152,8 @@ if(ANDROID)
     endif()
 endif()
 
+find_package(Qt6WaylandClient REQUIRED)
+find_package(Qt6Multimedia REQUIRED)
 find_package(Qt6
     REQUIRED
     COMPONENTS
@@ -175,6 +177,8 @@ find_package(Qt6
         TextToSpeech
         Widgets
         Xml
+        MultimediaQuickPrivate
+        Quick3D
     OPTIONAL_COMPONENTS
         LinguistTools
         SerialPort
